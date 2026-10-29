@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Defines character encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes website responsive on mobile, tablet and desktop -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website title shown in browser tab -->
+    <title>Brew & Bean | Coffee Shop</title>
+
+    <!-- Bootstrap CSS for layout, colors, buttons and cards -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- bg-light gives the page a light background -->
+  <body class="bg-light">
+    <!-- ========== NAVBAR ========== -->
+    <!-- Navbar contains the logo and navigation links -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <!-- Brand name of the website -->
+        <a class="navbar-brand fw-bold fs-3" href="#"> ☕ Brew & Bean </a>
+
+        <!-- Button appears on smaller screens to open the menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links collapse on mobile screens -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <!-- ms-auto moves the links to the right -->
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#menu" class="nav-link">Our Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+
+            <!-- Button links directly to the menu section -->
+            <li class="nav-item">
+              <a href="#menu" class="btn btn-warning rounded-pill px-4">
+                Order Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <!-- Main introduction section displayed at the top -->
+    <!-- bg-dark creates a dark background and text-white makes text white -->
+    <section id="home" class="bg-dark text-white py-5">
+      <div class="container py-lg-5">
+        <!-- Creates two columns for text and image -->
+        <div class="row align-items-center g-5">
+          <!-- Left column contains heading and buttons -->
+          <div class="col-lg-6">
+            <!-- Small label above the main heading -->
+            <span class="badge bg-warning text-dark mb-3">
+              FRESHLY BREWED EVERY DAY
+            </span>
+
+            <!-- display-2 creates a large heading -->
+            <h1 class="display-2 fw-bold">
+              Bad Coffee.
+              <span class="text-warning">Good Mood.</span>
+            </h1>
+
+            <p class="lead text-white-50 my-4">
+              Discover your new favorite coffee, made with carefully selected
+              beans and a little extra love.
+            </p>
+
+            <!-- Main action buttons -->
+            <a
+              href="#menu"
+              class="btn btn-warning btn-lg rounded-pill px-4 me-2 mb-2"
+            >
+              Explore Menu
+            </a>
+
+            <a
+              href="#about"
+              class="btn btn-outline-light btn-lg rounded-pill px-4 mb-2"
+            >
+              Our Story
+            </a>
+
+            <!-- Small statistics displayed in three columns -->
+            <div class="row mt-4 g-3">
+              <div class="col-4">
+                <h3 class="fw-bold">15+</h3>
+                <small class="text-white-50">Coffee Blends</small>
+              </div>
+
+              <div class="col-4">
+                <h3 class="fw-bold">5k+</h3>
+                <small class="text-white-50">Happy Customers</small>
+              </div>
+
+              <div class="col-4">
+                <h3 class="fw-bold">4.9★</h3>
+                <small class="text-white-50">Customer Rating</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column contains the main coffee image -->
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80"
+              class="img-fluid rounded-4 shadow"
+              alt="Freshly brewed coffee in a cafe"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES SECTION ========== -->
+    <!-- Highlights the main benefits of the coffee shop -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <!-- Three feature columns with centered text -->
+        <div class="row g-4 text-center">
+          <!-- Feature 1 -->
+          <div class="col-md-4">
+            <div class="p-3">
+              <div class="display-5 mb-3">🌱</div>
+
+              <h5 class="fw-bold">Quality Beans</h5>
+
+              <p class="text-secondary mb-0">
+                Carefully selected beans for rich flavor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-md-4">
+            <div class="p-3">
+              <div class="display-5 mb-3">☕</div>
+
+              <h5 class="fw-bold">Expert Brewing</h5>
+
+              <p class="text-secondary mb-0">
+                Every cup prepared with care and attention.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-md-4">
+            <div class="p-3">
+              <div class="display-5 mb-3">❤️</div>
+
+              <h5 class="fw-bold">Made With Love</h5>
+
+              <p class="text-secondary mb-0">
+                Great coffee and a welcoming atmosphere.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COFFEE MENU SECTION ========== -->
+    <!-- Displays coffee products in a responsive card layout -->
+    <section id="menu" class="py-5 bg-light">
+      <div class="container">
+        <!-- Section heading -->
+        <div class="text-center mb-5">
+          <span class="badge bg-warning text-dark mb-2"> OUR FAVORITES </span>
+
+          <h2 class="display-5 fw-bold">The Coffee Menu</h2>
+
+          <p class="text-secondary">Simple ingredients. Unforgettable taste.</p>
+        </div>
+
+        <!-- Each row contains three cards on large screens -->
+        <div class="row g-4">
+          <!-- COFFEE CARD 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <!-- Product image -->
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top"
+                alt="Iced latte"
+              />
+
+              <!-- Product information -->
+              <div class="card-body p-4">
+                <!-- Product name and label -->
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h4 class="fw-bold mb-0">Iced Latte</h4>
+
+                  <span class="badge bg-warning text-dark"> Popular </span>
+                </div>
+
+                <p class="text-secondary">
+                  Smooth espresso, cold milk, and refreshing ice.
+                </p>
+
+                <!-- Price and order button -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="fw-bold mb-0">$4.50</h4>
+
+                  <a href="#contact" class="btn btn-dark rounded-pill px-3">
+                    Order +
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COFFEE CARD 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top"
+                alt="Cappuccino"
+              />
+
+              <div class="card-body p-4">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h4 class="fw-bold mb-0">Cappuccino</h4>
+
+                  <span class="badge bg-success"> Favorite </span>
+                </div>
+
+                <p class="text-secondary">
+                  Rich espresso topped with silky steamed milk foam.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="fw-bold mb-0">$3.80</h4>
+
+                  <a href="#contact" class="btn btn-dark rounded-pill px-3">
+                    Order +
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COFFEE CARD 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+                class="card-img-top"
+                alt="Classic Americano"
+              />
+
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-2">Classic Americano</h4>
+
+                <p class="text-secondary">
+                  Bold espresso balanced with hot water for a smooth, classic
+                  coffee.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="fw-bold mb-0">$3.00</h4>
+
+                  <a href="#contact" class="btn btn-dark rounded-pill px-3">
+                    Order +
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SPECIAL OFFER SECTION ========== -->
+    <!-- Highlights a promotion to attract customers -->
+    <section class="py-5">
+      <div class="container">
+        <!-- One large banner divided into text and image -->
+        <div
+          class="row align-items-center g-0 bg-warning rounded-4 overflow-hidden"
+        >
+          <!-- Offer text -->
+          <div class="col-lg-7 p-4 p-lg-5">
+            <span class="badge bg-dark mb-3"> SPECIAL OFFER </span>
+
+            <h2 class="display-5 fw-bold">Your First Coffee Is 20% Off!</h2>
+
+            <p class="lead">
+              Take a break, grab your favorite drink, and make your day a little
+              better.
+            </p>
+
+            <a href="#contact" class="btn btn-dark btn-lg rounded-pill px-4">
+              Get Your Offer
+            </a>
+          </div>
+
+          <!-- Offer image -->
+          <div class="col-lg-5">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+              class="img-fluid w-100"
+              alt="Coffee cup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <!-- Introduces the coffee shop and its values -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Left column: shop image -->
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=80"
+              class="img-fluid rounded-4 shadow-sm"
+              alt="Coffee shop interior"
+            />
+          </div>
+
+          <!-- Right column: shop description -->
+          <div class="col-lg-6">
+            <span class="badge bg-warning text-dark mb-3"> OUR STORY </span>
+
+            <h2 class="display-5 fw-bold">More Than Just a Cup of Coffee</h2>
+
+            <p class="text-secondary my-4">
+              Brew & Bean is built around the simple idea that good coffee
+              brings people together. Whether you are starting your morning or
+              meeting a friend, there is always a place for you here.
+            </p>
+
+            <!-- First benefit -->
+            <div class="d-flex gap-3 mb-3">
+              <div class="fs-3">✓</div>
+
+              <div>
+                <h6 class="fw-bold mb-1">Freshly Prepared</h6>
+
+                <p class="text-secondary mb-0">
+                  Every drink is made fresh to order.
+                </p>
+              </div>
+            </div>
+
+            <!-- Second benefit -->
+            <div class="d-flex gap-3">
+              <div class="fs-3">✓</div>
+
+              <div>
+                <h6 class="fw-bold mb-1">A Place to Relax</h6>
+
+                <p class="text-secondary mb-0">
+                  Enjoy a welcoming space and friendly service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <!-- Contains a simple contact form -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Visit Brew & Bean</h2>
+
+          <p class="text-secondary">
+            Questions or special requests? Get in touch.
+          </p>
+        </div>
+
+        <!-- Centers the form within the page -->
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <!-- Form controls use Bootstrap's form classes -->
+            <form
+              action="#"
+              method="post"
+              class="bg-white rounded-4 shadow-sm p-4"
+            >
+              <!-- Name input -->
+              <div class="mb-3">
+                <label for="name" class="form-label"> Your Name </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <!-- Email input -->
+              <div class="mb-3">
+                <label for="email" class="form-label"> Email Address </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <!-- Message input -->
+              <div class="mb-3">
+                <label for="message" class="form-label"> Message </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Write your message"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- w-100 makes the button fill the available width -->
+              <button type="submit" class="btn btn-dark w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <!-- Footer contains the brand and quick navigation links -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <!-- Brand information -->
+          <div class="col-md-6 text-center text-md-start">
+            <h5 class="fw-bold">☕ Brew & Bean</h5>
+
+            <p class="text-white-50 mb-0">Made fresh. Served with love.</p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#home" class="text-white text-decoration-none me-3">
+              Home
+            </a>
+
+            <a href="#menu" class="text-white text-decoration-none me-3">
+              Menu
+            </a>
+
+            <a href="#contact" class="text-white text-decoration-none">
+              Contact
+            </a>
+          </div>
+        </div>
+
+        <!-- Horizontal line separates footer content -->
+        <hr class="border-secondary" />
+
+        <!-- Copyright information -->
+        <p class="text-center text-white-50 mb-0">
+          &copy; 2026 Brew & Bean. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript enables the mobile navbar toggle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
